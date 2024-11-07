@@ -1,6 +1,5 @@
 import Footer from "../components/navbar/footer";
 import Navbar from "../components/navbar/navbar";
-import Sidebar from "../components/navbar/sidebar";
 
 interface Props {
   children: React.ReactNode;
@@ -8,14 +7,19 @@ interface Props {
 
 export default function AppLayout({ children }: Props) {
   return (
-    <div className="flex">
-      <Sidebar />
+    <div className="flex flex-col md:flex-row">
+      {/* Sidebar */}
+      {/* <Sidebar /> */}
 
-      <div className="flex-1 flex flex-col min-h-screen ml-64 overflow-hidden">
+      {/* Main content wrapper */}
+      <div className="flex-1 min-h-screen overflow-hidden">
+        {/* Navbar */}
         <Navbar />
 
+        {/* Main content area */}
         <main className="flex-1 overflow-auto">{children}</main>
 
+        {/* Footer */}
         <Footer />
       </div>
     </div>
