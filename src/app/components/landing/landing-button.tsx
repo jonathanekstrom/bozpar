@@ -6,7 +6,7 @@ export function LandingButton() {
   const router = useRouter();
 
   const handleClick = () => {
-    router.push("/customer");
+    router.push("/lookup");
   };
 
   return (

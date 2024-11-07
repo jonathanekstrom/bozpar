@@ -1,11 +1,9 @@
 "use server";
 
+import Contact from "@/app/components/contact/contact";
+
 const contact = () => {
-  return (
-    <div>
-      <h1>Contact</h1>
-    </div>
-  );
+  return <Contact />;
 };
 
 export default contact;

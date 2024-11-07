@@ -1,9 +1,9 @@
+"use client";
+
+import PreCustomerLayout from "../pre-customer/layout";
+
 const About = () => {
-  return (
-    <div>
-      <h1>About</h1>
-    </div>
-  );
+  return <PreCustomerLayout title={"Om"}>Om</PreCustomerLayout>;
 };
 
 export default About;

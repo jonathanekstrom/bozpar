@@ -1,4 +1,6 @@
+import Footer from "../components/navbar/footer";
 import Navbar from "../components/navbar/navbar";
+import Sidebar from "../components/navbar/sidebar";
 
 interface Props {
   children: React.ReactNode;
@@ -6,9 +8,16 @@ interface Props {
 
 export default function AppLayout({ children }: Props) {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800">
-      <Navbar />
-      <main className="flex items-center justify-center p-4">{children}</main>
+    <div className="flex">
+      <Sidebar />
+
+      <div className="flex-1 flex flex-col min-h-screen ml-64 overflow-hidden">
+        <Navbar />
+
+        <main className="flex-1 overflow-auto">{children}</main>
+
+        <Footer />
+      </div>
     </div>
   );
 }
