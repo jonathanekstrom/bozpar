@@ -1,9 +1,9 @@
 "use client";
 
-import CustomerLayout from "../customer/layout";
+import PreCustomerLayout from "../pre-customer/layout";
 
-const OurServices = () => {
-  return <CustomerLayout title="Våra tjänster">Våra tjänster</CustomerLayout>;
+const OurServicesComponent = () => {
+  return <PreCustomerLayout title="Våra tjänster">Våra tjänster</PreCustomerLayout>;
 };
 
-export default OurServices;
+export default OurServicesComponent;

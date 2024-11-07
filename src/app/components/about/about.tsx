@@ -2,8 +2,8 @@
 
 import PreCustomerLayout from "../pre-customer/layout";
 
-const About = () => {
+const AboutComponent = () => {
   return <PreCustomerLayout title={"Om"}>Om</PreCustomerLayout>;
 };
 
-export default About;
+export default AboutComponent;

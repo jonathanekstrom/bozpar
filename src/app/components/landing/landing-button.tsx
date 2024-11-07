@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 
-export function LandingButton() {
+const LandingButton = () => {
   const router = useRouter();
 
   const handleClick = () => {
@@ -10,8 +10,10 @@ export function LandingButton() {
   };
 
   return (
-    <button onClick={handleClick} className="btn bg-gray-700 text-white px-6 py-3 rounded-md text-lg">
+    <button onClick={handleClick} className="w-full btn bg-gray-700 text-white px-6 py-3 rounded-md text-lg hover:bg-gray-500 duration-200">
       Kom igång
     </button>
   );
-}
+};
+
+export default LandingButton;

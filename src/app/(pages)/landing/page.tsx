@@ -2,7 +2,7 @@
 
 import LandingComponent from "@/app/components/landing/landing-component";
 
-const LandingPage = () => {
+const landingPage = () => {
   return (
     <>
       <LandingComponent />
@@ -10,4 +10,4 @@ const LandingPage = () => {
   );
 };
 
-export default LandingPage;
+export default landingPage;

@@ -25,7 +25,7 @@ const PreCustomerWizardComponent = () => {
   };
 
   return (
-    <div className="max-w-lg mx-auto p-8 bg-gray-900 bg-opacity-90 rounded-xl shadow-2xl">
+    <div className=" max-w-lg mx-auto p-4 bg-gray-900 bg-opacity-90 rounded-xl shadow-2xl">
       <div>{steps[currentStep]}</div>
 
       <div className="flex justify-between mt-6">

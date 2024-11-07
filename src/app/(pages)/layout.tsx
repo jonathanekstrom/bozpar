@@ -7,20 +7,15 @@ interface Props {
 
 export default function AppLayout({ children }: Props) {
   return (
-    <div className="flex flex-col md:flex-row">
-      {/* Sidebar */}
-      {/* <Sidebar /> */}
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-gray-900 to-gray-700">
+      <div className="flex flex-col md:flex-row">
+        <div className="flex-1 min-h-screen overflow-hidden">
+          <Navbar />
 
-      {/* Main content wrapper */}
-      <div className="flex-1 min-h-screen overflow-hidden">
-        {/* Navbar */}
-        <Navbar />
+          <main className="flex-1 overflow-auto">{children}</main>
 
-        {/* Main content area */}
-        <main className="flex-1 overflow-auto">{children}</main>
-
-        {/* Footer */}
-        <Footer />
+          <Footer />
+        </div>
       </div>
     </div>
   );

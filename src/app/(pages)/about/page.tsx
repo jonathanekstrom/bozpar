@@ -1,13 +1,9 @@
 "use server";
 
-import About from "@/app/components/about/about";
+import AboutComponent from "@/app/components/about/about";
 
-const about = () => {
-  return (
-    <div>
-      <About />
-    </div>
-  );
+const aboutPage = () => {
+  return <bboutComponent />;
 };
 
-export default about;
+export default aboutPage;

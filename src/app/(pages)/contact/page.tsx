@@ -1,9 +1,9 @@
 "use server";
 
-import Contact from "@/app/components/contact/contact";
+import ContactComponent from "@/app/components/contact/contact";
 
-const contact = () => {
-  return <Contact />;
+const contactPage = () => {
+  return <contactComponent />;
 };
 
-export default contact;
+export default contactPage;

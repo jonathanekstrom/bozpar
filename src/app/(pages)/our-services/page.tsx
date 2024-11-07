@@ -1,9 +1,9 @@
 "use server";
 
-import OurServices from "@/app/components/our-services/our-services";
+import OurServicesComponent from "@/app/components/our-services/our-services";
 
-const services = () => {
-  return <OurServices />;
+const ourServicesPage = () => {
+  return <OurServicesComponent />;
 };
 
-export default services;
+export default ourServicesPage;

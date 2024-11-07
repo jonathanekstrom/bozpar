@@ -2,8 +2,8 @@
 "use client";
 
 import Form from "next/form";
-import CustomerLayout from "../customer/layout";
 import LookupButton from "./lookup-button";
+import PreCustomerLayout from "../pre-customer/layout";
 
 const LookupComponent = () => {
   const handleSubmit = (e: any) => {
@@ -11,7 +11,7 @@ const LookupComponent = () => {
   };
 
   return (
-    <CustomerLayout title="Sök Person">
+    <PreCustomerLayout title="Sök Person">
       {" "}
       <Form action="/search" className="spacy-y-6" onSubmit={handleSubmit}>
         <>
@@ -25,7 +25,7 @@ const LookupComponent = () => {
         </>
         <LookupButton />
       </Form>
-    </CustomerLayout>
+    </PreCustomerLayout>
   );
 };
 

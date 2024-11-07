@@ -1,9 +1,9 @@
 "use server";
 
-import LandingPage from "./(pages)/landing/page";
+import landingPage from "./(pages)/landing/page";
 
 const Home = () => {
-  return <LandingPage />;
+  return <landingPage />;
 };
 
 export default Home;
