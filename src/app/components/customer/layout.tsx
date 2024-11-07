@@ -8,7 +8,7 @@ interface Props {
 
 const CustomerLayout: React.FC<Props> = ({ title, children }) => {
   return (
-    <div className="max-w-lg mx-auto p-8 bg-gray-900 bg-opacity-90 rounded-xl shadow-2xl">
+    <div className="max-w-lg mx-auto bg-gray-900 bg-opacity-90 rounded-xl shadow-2xl">
       <h2 className="mb-6 text-3xl font-bold text-white text-center">{title}</h2>
       {children}
     </div>

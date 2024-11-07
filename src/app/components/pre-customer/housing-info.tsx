@@ -63,7 +63,6 @@ const HousingInfoComponent = () => {
       setErrors(validationErrors);
     } else {
       addToLocalStorage("housingInfo", formData);
-      alert("Bostadsinformation är sparad!");
       setIsSaved(true);
       setErrors({});
     }

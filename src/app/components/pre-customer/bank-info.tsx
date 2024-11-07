@@ -42,7 +42,6 @@ const BankInfoComponent = () => {
       setErrors(validationErrors);
     } else {
       addToLocalStorage("bankInfo", formData);
-      alert("Nuvarande bankinformation är sparad!");
       setIsSaved(true);
       setErrors({});
     }

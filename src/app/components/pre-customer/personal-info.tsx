@@ -52,7 +52,6 @@ const PersonalInfoComponent = () => {
       setErrors(validationErrors);
     } else {
       addToLocalStorage("personalInfo", formData);
-      alert("Personlig information är sparad!");
       setIsSaved(true);
       setErrors({});
     }

@@ -27,12 +27,12 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-hidden`}>
         {/* Wrapper layout */}
-        <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-900 to-gray-800 overflow-hidden">
+        <div className="flex flex-col min-h-screen bg-gradient-to-b from-gray-900 to-gray-800">
           <Navbar /> {/* Top navigation bar */}
-          <main className="flex-1 flex items-center justify-center overflow-hidden">
-            <div className="h-full w-full overflow-y-auto">{children}</div>
+          <main className="flex-1 flex flex-col justify-between overflow-auto">
+            <div className="flex-1 flex items-center justify-center">{children}</div>
           </main>
           <Footer /> {/* Bottom footer */}
         </div>

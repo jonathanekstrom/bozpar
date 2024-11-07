@@ -49,7 +49,6 @@ const ProfessionalInfoComponent = () => {
       setErrors(validationErrors);
     } else {
       addToLocalStorage("professionalInfo", formData);
-      alert("Yrkesinformation är sparad!");
       setIsSaved(true);
       setErrors({});
     }

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 
 import { useState, useEffect } from "react";
@@ -50,12 +51,6 @@ const SendButtonComponent = () => {
       <LoadingButtonComponent isLoading={loading} onClick={handleSend}>
         Skicka
       </LoadingButtonComponent>
-
-      {error && (
-        <p role="alert" className="mt-2 text-red-600">
-          {error}
-        </p>
-      )}
     </PreCustomerLayout>
   );
 };
