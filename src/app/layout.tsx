@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Footer from "./components/navbar/footer";
+import Navbar from "./components/navbar/navbar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -18,14 +20,25 @@ export const metadata: Metadata = {
   description: "Where banking meets technology",
 };
 
-export default function RootLayout({
+const RootLayout = ({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>) => {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        {/* Wrapper layout */}
+        <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-900 to-gray-800 overflow-hidden">
+          <Navbar /> {/* Top navigation bar */}
+          <main className="flex-1 flex items-center justify-center overflow-hidden">
+            <div className="h-full w-full overflow-y-auto">{children}</div>
+          </main>
+          <Footer /> {/* Bottom footer */}
+        </div>
+      </body>
     </html>
   );
-}
+};
+
+export default RootLayout;

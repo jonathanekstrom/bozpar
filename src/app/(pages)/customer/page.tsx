@@ -2,8 +2,8 @@
 
 import PreCustomerWizardComponent from "@/app/components/wizard/pre-customer-wizard";
 
-const customerPage = () => {
+const CustomerPage = () => {
   return <PreCustomerWizardComponent />;
 };
 
-export default customerPage;
+export default CustomerPage;

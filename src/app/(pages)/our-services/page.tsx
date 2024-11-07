@@ -2,8 +2,8 @@
 
 import OurServicesComponent from "@/app/components/our-services/our-services";
 
-const ourServicesPage = () => {
+const OurServicesPage = () => {
   return <OurServicesComponent />;
 };
 
-export default ourServicesPage;
+export default OurServicesPage;

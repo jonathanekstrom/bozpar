@@ -2,12 +2,8 @@
 
 import LandingComponent from "@/app/components/landing/landing-component";
 
-const landingPage = () => {
-  return (
-    <>
-      <LandingComponent />
-    </>
-  );
+const LandingPage = () => {
+  return <LandingComponent />;
 };
 
-export default landingPage;
+export default LandingPage;

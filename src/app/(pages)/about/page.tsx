@@ -2,8 +2,8 @@
 
 import AboutComponent from "@/app/components/about/about";
 
-const aboutPage = () => {
-  return <bboutComponent />;
+const AboutPage = () => {
+  return <AboutComponent />;
 };
 
-export default aboutPage;
+export default AboutPage;

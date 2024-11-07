@@ -60,9 +60,9 @@ const PersonalInfoComponent = () => {
 
   return (
     <PreCustomerLayout title="Personlig Information">
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="space-y-6 w-full">
         <div className="mb-5">
-          <label htmlFor="firstName" className="block mb-2 text-lg text-gray-300">
+          <label htmlFor="firstName" className="block mb-2 text-lg text-gray-300 ">
             Förnamn:
           </label>
           <input

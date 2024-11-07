@@ -50,7 +50,7 @@ const BankInfoComponent = () => {
 
   return (
     <PreCustomerLayout title="Nuvarande Bankinformation">
-      <form onSubmit={handleSubmit} className="space-y-6">
+      <form onSubmit={handleSubmit} className="space-y-6 w-full">
         {/* Bolån */}
         <div>
           <label htmlFor="loanAmount" className="block mb-2 text-lg text-gray-300">

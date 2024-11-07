@@ -71,7 +71,7 @@ const HousingInfoComponent = () => {
 
   return (
     <PreCustomerLayout title="Bostadsinformation">
-      <form onSubmit={handleSubmit} className="space-y-6">
+      <form onSubmit={handleSubmit} className="space-y-6 w-full">
         {/* Typ av bostad */}
         <div>
           <label htmlFor="propertyType" className="block mb-2 text-lg text-gray-300">

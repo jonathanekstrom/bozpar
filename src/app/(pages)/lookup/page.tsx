@@ -2,8 +2,8 @@
 
 import LookupComponent from "@/app/components/lookup/lookup-component";
 
-const lookupPage = () => {
+const LookupPage = () => {
   return <LookupComponent />;
 };
 
-export default lookupPage;
+export default LookupPage;

@@ -2,8 +2,8 @@
 
 import ContactComponent from "@/app/components/contact/contact";
 
-const contactPage = () => {
-  return <contactComponent />;
+const ContactPage = () => {
+  return <ContactComponent />;
 };
 
-export default contactPage;
+export default ContactPage;
